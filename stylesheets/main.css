@@ -9,6 +9,7 @@ h1 {
 /* change to a nicer font */
 body {
     font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    background-color: #DDDDDD;
 }
 
 /* the border-radius attribute makes the corners rounded and the margin clears out space for the stuff inside the lesson divs. Without "padding: 10px;" the text box runs to the very edge of the outer box and looks awful*/
@@ -90,15 +91,15 @@ td {
     border-collapse: collapse;
 }
 /*this is the code from Fresh Tomatoes to make my video link work */
-div.video {
+/*div.video {
     padding-top: 80px;
-}
+}*/
 
-#trailer .modal-dialog {
+/*#trailer .modal-dialog {
     margin-top: 200px;
     width: 640px;
     height: 480px;
-}
+}*/
 .hanging-close {
     position: absolute;
     top: -12px;

@@ -1,5 +1,4 @@
-<!doctype html>
-{% autoescape true %}
+<!DOCTYPE html>
 <html>
     <head><title>Think like a programmer</title>
         <link rel="stylesheet" href="stylesheets/main.css">
@@ -59,11 +58,11 @@
         -ms-box-sizing: border-box;<br>
         box-sizing: border-box;<br>
     } </span>
-    			</p>
+          </p>
                 <p>
     Some other tips:
-    			</p> <!-- OL is an ordered list. Type can = numbers (1), upper/lower case letters (A/a), roman numerals (I), or lower case roman numerals (i)-->
-    			<ol type="1">
+          </p> <!-- OL is an ordered list. Type can = numbers (1), upper/lower case letters (A/a), roman numerals (I), or lower case roman numerals (i)-->
+          <ol type="1">
                 <li>Adding the rule display: flex; to the appropriate CSS will let divs appear next to each other but only when the sum is less than 100%. </li>
                 <li>Look for Natural Boxes </li>
                 <li>Look for repeated styles and semantic elements</li>
@@ -85,9 +84,9 @@ Terminals never appear on the left side of a rule.
          </p>
          <p>
          Python uses expressions as well.  The rules are similar, replace Expressions with a number, number operator (like + ) number, or another Expression:<br>
-			Expression -> Expression Operator Expression <br>
-			Expression -> Number <br>
-			Actual numbers and operators are terminals on the right side of the rule <br>
+      Expression -> Expression Operator Expression <br>
+      Expression -> Number <br>
+      Actual numbers and operators are terminals on the right side of the rule <br>
          </p>
          </div>
          <h2>Variables</h2>
@@ -122,7 +121,7 @@ Terminals never appear on the left side of a rule.
          <p>
          Find is a function that finds a target string within the original string and returns the number of the character where the target begins. The syntax is string1.find(string2). There is another parameter you can add, so that the computer will begin looking for string2 at a particular character within string1, like string1.find(string2,4) will begin looking for string2 within string1 at character 4. This is helpful if you are looking for multiple instances of string2 within string1 since .find without the second parameter will only return the start of the first instance of string2.<br>
  Putting these two together is helpful - find the start of string2 then print the remainder of string1 from that point to confirm you found it. Like so:
- 		 </p>
+     </p>
          <UL style="list-style-position:inside">
          <li>string1="Python is more fun than HTML"</li>
          <li>string2="more"</li>
@@ -144,7 +143,7 @@ Terminals never appear on the left side of a rule.
                    <div class="code-block">
             def sum(x,y,z): <br>
             <span class="indent">return x+y+z</span>
-          		</div>
+              </div>
           <p>
           To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this:
           <div class="code-block">
@@ -165,17 +164,17 @@ def description(description_text):<br>
         
 print title(&quot;I created this title with Python!&quot;)<br>
 print description(&quot;I think I understand how this could really help speed up coding in HTML, but the triple quotes really stumped me!&quot;)
-			</div>
+      </div>
          </div>
          <h2>I created this title with Python!</h2><div class="concept"><p>
 I think I understand how this could really help speed up coding in HTML, but the triple quotes really stumped me!</p></div>
-		<h2>But Andy did it much better...</h2>
+    <h2>But Andy did it much better...</h2>
         <div class="concept">
         <p>
         Here is Andy's code, with a few edits to match my CSS structure.
         </p>
-        	<div class="code-block">
-		def HTML_Concept(title, description):<br>
+          <div class="code-block">
+    def HTML_Concept(title, description):<br>
             <span class="indent">    title_text = &quot;&lt;h2&gt;&quot;+title+&quot;&lt;/h2&gt;</span><br>
             <span class="indent">    description_text = &quot;&quot;&quot;</span><br>
             <span class="indent">        &lt;div class=&quot;concept&quot;&gt;</span><br>
@@ -190,8 +189,8 @@ first_title = &quot;This section was created with the Python code commented abov
 first_description = &quot;Wow, this is really complicated! I really hope this works!&quot;<br><br>
 
 print HTML_Concept(first_title,first_description)
-			
-		</div>
+      
+    </div>
        </div>
         <h2>This section was created with the Python code commented above!</h2>
     <div class="concept">
@@ -217,7 +216,7 @@ print HTML_Concept(first_title,first_description)
             if (test epression): <br>
             <span class="indent">This block of instructions are executed ONLY if true and is indented</span><br>
             This block of instructions is executed if the test is false and is not indented
-          		</div>
+              </div>
         <p>
         Here are some examples we used in class:
         </p>
@@ -227,7 +226,7 @@ print HTML_Concept(first_title,first_description)
             <span class="indent_indent"> return n</span><br>
             <span class="indent"> Else:</span><br>
             <span class="indent_indent"> return p</span>
-          		</div>
+              </div>
         <p>
         We used this 'bigger' function in a harder example that could be solved two ways:
         </p>
@@ -243,11 +242,11 @@ print HTML_Concept(first_title,first_description)
             <span class="indent_3"> return b</span><br>
             <span class="indent_indent"> Else:</span><br>
             <span class="indent_3"> return c</span><br>
-          		</div><br>
+              </div><br>
          <p>
          Or it can be solved using the "bigger" function:
          </p>
-       			<div class="code-block">
+            <div class="code-block">
             def bigger (a,b): <br>
             <span class="indent"> If a>b:</span><br>
             <span class="indent_indent"> return a</span><br>
@@ -258,12 +257,12 @@ print HTML_Concept(first_title,first_description)
             <em> OR </em><br>
             def biggest (a,b,c): <br>
             <span class="indent"> return max (a,b,c) </span>       
-          		</div><br>
+              </div><br>
          <p>
          Example: Define a procedure, greatest, # that takes as input a list of positive numbers, and returns the greatest number in that list. If the input list is empty, the output should be 0.<br>
-		</p>
+    </p>
              <div class="code-block">
-			def greatest(list_of_numbers):<br>
+      def greatest(list_of_numbers):<br>
             <span class="indent">     if list_of_numbers ==[]:</span><br>
             <span class="indent_indent">         return 0</span><br>
             <span class="indent">         else:</span><br>
@@ -274,37 +273,37 @@ print HTML_Concept(first_title,first_description)
          Operators can also be used with text.  The example we covered was to return "True" if a person's name started with "D" or "N":
          </p>
                <div class="code-block">
-         	def is_friend(name): <br>
-   			<span class="indent">if name[0]=='D':</span><br>
-        	<span class="indent_indent"> return True </span><br>
-    		<span class="indent">if name[0]=='N': </span><br>
-        	<span class="indent_indent">return True </span><br>
-    		<span class="indent">return False </span><br>
+          def is_friend(name): <br>
+        <span class="indent">if name[0]=='D':</span><br>
+          <span class="indent_indent"> return True </span><br>
+        <span class="indent">if name[0]=='N': </span><br>
+          <span class="indent_indent">return True </span><br>
+        <span class="indent">return False </span><br>
             print is_friend('Diane') <br>
             returns : True
-       			 </div><br><br>
+             </div><br><br>
          </div>
          <h2>Loops </h2>
     <div class="concept">
-    	<p>
+      <p>
         Loops use a "While" function to repeatedly evaluate if the test expression is true and perform the block of code repeatedly as long as the expression is true.  A <em>Break</em> is used to stop the loop while the test expression is still true, and provides the ability to move to the next block of code.  The code stops running when the test expression is false, and moves to the next block of code.  Here is an example to count numbers from 1 to a defined number, including the defined number: 
         </p>
                <div class="code-block">      
-        	def print_numbers(n): <br>
-    		<span class="indent"> i = 1 </span><br>
-    		<span class="indent"> while i is less than or equal to n: </span><br> <!--really says while i <= n: -->
-        	<span class="indent_indent"> print i </span><br>
-        	<span class="indent_indent"> i = i + 1 </span><br>
+          def print_numbers(n): <br>
+        <span class="indent"> i = 1 </span><br>
+        <span class="indent"> while i is less than or equal to n: </span><br> <!--really says while i <= n: -->
+          <span class="indent_indent"> print i </span><br>
+          <span class="indent_indent"> i = i + 1 </span><br>
             print_numbers(3) <br>
             returns: <br>
             1<br>
             2<br>
             3 
-            	</div><br>
+              </div><br>
     </div>
              <h2>Generating HTML - complete example </h2>
     <div class="concept">
-    	<p>
+      <p>
         First develop a strategy for your code:
          </p>
          <ol type="1">
@@ -334,34 +333,34 @@ print HTML_Concept(first_title,first_description)
                <div class="code-block">     
     full_html_text = html_text_1 + html_text_2 + html_text_3
     return full_html_text 
-    			</div><br><br>
+          </div><br><br>
 
                <div class="code-block">      
-			def get_title(concept):<br>
-    		<span class="indent">    start_location = concept.find('TITLE:')</span><br>
-     		<span class="indent">       end_location = concept.find('DESCRIPTION:')</span><br>
-    		<span class="indent">       title = concept[start_location+7 : end_location-1]</span><br>
-    		<span class="indent">       return title</span><br>
-            	</div><br><br>
+      def get_title(concept):<br>
+        <span class="indent">    start_location = concept.find('TITLE:')</span><br>
+        <span class="indent">       end_location = concept.find('DESCRIPTION:')</span><br>
+        <span class="indent">       title = concept[start_location+7 : end_location-1]</span><br>
+        <span class="indent">       return title</span><br>
+              </div><br><br>
 
                <div class="code-block">      
                def get_description(concept):<br>
-    		<span class="indent">        start_location = concept.find('DESCRIPTION:')</span><br>
-    		<span class="indent">        description = concept[start_location+13 :]</span><br>
-    		<span class="indent">        return description</span><br>
-            	</div><br><br>
+        <span class="indent">        start_location = concept.find('DESCRIPTION:')</span><br>
+        <span class="indent">        description = concept[start_location+13 :]</span><br>
+        <span class="indent">        return description</span><br>
+              </div><br><br>
                 
                <div class="code-block">  
                def get_concept_by_number(text, concept_number):
-    		<span class="indent">            counter = 0</span><br>
-    		<span class="indent">            while counter is less than concept_number:</span><br><!--use < symbol-->
-        	<span class="indent_indent">           counter = coutner + 1 </span><br>
+        <span class="indent">            counter = 0</span><br>
+        <span class="indent">            while counter is less than concept_number:</span><br><!--use < symbol-->
+          <span class="indent_indent">           counter = coutner + 1 </span><br>
             <!--mispelled counter on purpose so it won't pick up in dreamweaver-->
-        	<span class="indent_indent">         next_concept_start = text.find('TITLE:')</span><br>
-        	<span class="indent_indent">         next_concept_end   = text.find('TITLE:', next_concept_start + 1)</span><br>
-        	<span class="indent_indent">         concept = text[next_concept_start:next_concept_end]</span><br>
-        	<span class="indent_indent">         text = text[next_concept_end:]</span><br>
-    		<span class="indent">    return concept</span><br>
+          <span class="indent_indent">         next_concept_start = text.find('TITLE:')</span><br>
+          <span class="indent_indent">         next_concept_end   = text.find('TITLE:', next_concept_start + 1)</span><br>
+          <span class="indent_indent">         concept = text[next_concept_start:next_concept_end]</span><br>
+          <span class="indent_indent">         text = text[next_concept_end:]</span><br>
+        <span class="indent">    return concept</span><br>
             </div><br><br>
         
 
@@ -378,28 +377,28 @@ DESCRIPTION: A while loop repeatedly executes the body of
 the loop until the "test condition" is no longer true."""<br>
 
                <div class="code-block"> 
-				def generate_all_html(text):<br>
-       		<span class="indent">    current_concept_number = 1</span><br>
-    		<span class="indent">    concept = get_concept_by_number(text, current_concept_number)</span><br>
-    		<span class="indent">    all_html = ''</span><br>
-    		<span class="indent">    while concept != '':</span><br>
-        	<span class="indent_indent">        title = get_title(concept)</span><br>
-        	<span class="indent_indent">        description = get_description(concept)</span><br>
-        	<span class="indent_indent">        concept_html = generate_concept_HTML(title, description)</span><br>
-        	<span class="indent_indent">        all_html = all_html + concept_html</span><br>
-        	<span class="indent_indent">        current_concept_number = current_concept_number + 1</span><br>
-        	<span class="indent_indent">        concept = get_concept_by_number(text, current_concept_number)</span><br>
-       		<span class="indent">        return all_html</span><br>
+        def generate_all_html(text):<br>
+          <span class="indent">    current_concept_number = 1</span><br>
+        <span class="indent">    concept = get_concept_by_number(text, current_concept_number)</span><br>
+        <span class="indent">    all_html = ''</span><br>
+        <span class="indent">    while concept != '':</span><br>
+          <span class="indent_indent">        title = get_title(concept)</span><br>
+          <span class="indent_indent">        description = get_description(concept)</span><br>
+          <span class="indent_indent">        concept_html = generate_concept_HTML(title, description)</span><br>
+          <span class="indent_indent">        all_html = all_html + concept_html</span><br>
+          <span class="indent_indent">        current_concept_number = current_concept_number + 1</span><br>
+          <span class="indent_indent">        concept = get_concept_by_number(text, current_concept_number)</span><br>
+          <span class="indent">        return all_html</span><br>
             </div><br><br>
 
                <div class="code-block"> 
 print generate_all_html(TEST_TEXT)
-			</div>
+      </div>
 
-	<div class="focus">
-		This code returns:
+  <div class="focus">
+    This code returns:
         </div>
-	<div class="concept">
+  <div class="concept">
     <div class="concept-title">
         Why Computers are Stupid
     </div>
@@ -431,22 +430,22 @@ the loop until the "test condition" is no longer true
     </div>
     <h2>Structured Data</h2>
     <div class="concept">
-    	<p>
+      <p>
         Structured data can be strings or lists.  A string is a sequence of characters, but the list is a sequence of ANYTHING.  You use INDEX features in lists, just like strings.  <br>
 [] = an empty list<br>
 <em> Here is a string and list comparison:</em>
 <table style="width:100%">
   <tr>
     <th><b>Strings</b></th>
-    <th><b>Lists</b></th>		
+    <th><b>Lists</b></th>   
   </tr>
   <tr>
     <td>s = 'yabba!'</td>
-    <td>p = ['y','a','b','b','a','!']</td>		
+    <td>p = ['y','a','b','b','a','!']</td>    
   </tr>
   <tr>
     <td>s[1]  returns 'a'</td>
-    <td>p[1] returns 'a'</td>		
+    <td>p[1] returns 'a'</td>   
   </tr>
   <tr>
     <td>s[2:4] returns 'bb'</td>
@@ -454,120 +453,120 @@ the loop until the "test condition" is no longer true
   </tr>
 </table><br>
 You can nest lists within lists.  If you need a line break to make it easier to read, break after the comma. For nested lists, you can index twice to return a single expression. Example:<br>
-		<div class="code-block"> 
-		List=[['you','Barry'],['me','Brenda']] <br>
-		List[0][1] 
+    <div class="code-block"> 
+    List=[['you','Barry'],['me','Brenda']] <br>
+    List[0][1] 
         </div><br>
         returns 'Barry'
-	<h3>MUTATION:</h3>
+  <h3>MUTATION:</h3>
     <p>
 Lists support mutation (strings do NOT)- you can change the value of the list after it is created without creating a new object.  You assign a new value similar to index:
-	</p>
-		<div class="code-block">     
-		List = ['Y','e','l','l','o']<br>
-		List[0] = 'H' <br>
-		Print List  
+  </p>
+    <div class="code-block">     
+    List = ['Y','e','l','l','o']<br>
+    List[0] = 'H' <br>
+    Print List  
         </div><br>
-		returns ['H','e','l','l','o']<br>
-	<p>
+    returns ['H','e','l','l','o']<br>
+  <p>
 Procedures do not need a return statement when replacing an item in a list
-	</p>
-	<h3>ALIASING:</h3>
+  </p>
+  <h3>ALIASING:</h3>
 Two different variables are assigned to the same object - this is important to understand when debugging - you may have renamed or added a name to a variable
 
-	<h3>LIST OPERATIONS:</h3>
+  <h3>LIST OPERATIONS:</h3>
     <p>
 Append - This is similar to the 'find' method and works like a procedure.  It mutates the list to add at the end of the list. It does NOT create a new list but edits the existing list.
-	</p> 
-		<div class="code-block"> 
-		List.append('!') <br>
-		Print List  
+  </p> 
+    <div class="code-block"> 
+    List.append('!') <br>
+    Print List  
         </div><br>
         returns ['H','e','l','l','o','!']
 
-	<h3>+ - : </h3>
+  <h3>+ - : </h3>
     This works like concatenate for strings but DOES create a new list:<br>
-		<div class="code-block">   
-		a=[0,1] <br>
-		b=[2,3]  <br>
-		a + b  returns [0,1,2,3] <br>
-		a.append(b) returns [0,1,[2,3]] 
+    <div class="code-block">   
+    a=[0,1] <br>
+    b=[2,3]  <br>
+    a + b  returns [0,1,2,3] <br>
+    a.append(b) returns [0,1,[2,3]] 
 </div><br>
 
-	<h3>Len (short for length):</h3>
+  <h3>Len (short for length):</h3>
 This counts the items in the list and returns a number. Len also works for strings and other items. <br>
-		<div class="code-block"> 
-		Len([0,1]) returns 2 <br>
-		Len(['a',['b',['c','d']]]) returns 2 <br>
-		Len('Udacity') returns 7
+    <div class="code-block"> 
+    Len([0,1]) returns 2 <br>
+    Len(['a',['b',['c','d']]]) returns 2 <br>
+    Len('Udacity') returns 7
         </div><br>
 
-	<h3>The += operator for lists:</h3>
+  <h3>The += operator for lists:</h3>
 This works by adding characters to the end of the list, similar to +, BUT also works like append in mutating the existing list.<br>
-		<div class="code-block"> 
+    <div class="code-block"> 
         list3 = [1,2,3,4] <br>
-		list3 += [5,6,7] <br>
-		print list3 <br>
-		returns  [1, 2, 3, 4, 5, 6, 7]<br>
+    list3 += [5,6,7] <br>
+    print list3 <br>
+    returns  [1, 2, 3, 4, 5, 6, 7]<br>
         </div><br>
 
 
-	<h3>Loops on Lists:</h3>
+  <h3>Loops on Lists:</h3>
 While Loop - continue to execute while the test is true <br>
 For Loop - <em>e</em> is a new variable we introduce that is the first object in the list; <em>list</em> is any expression that returns a list. <em>e</em> is every element in the list, one by one.<br>
 <!--examples are from From <https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3531748835/e-3618729701/m-3665548646> -->
-		<div class="code-block"> 
+    <div class="code-block"> 
         for <em>e</em> in <em>list</em>:<br>
-		<span class="indent">		Block of code to perform on every element in list </span>
+    <span class="indent">   Block of code to perform on every element in list </span>
         </div><br>
-        <p>	
+        <p> 
 Example:
-		</p>
-		<div class="code-block">
-		def sum_list(p): <br>
-		<span class="indent">	result = 0 </span><br>
-		<span class="indent">	for e in p: </span><br>
-		<span class="indent_indent">		result = result + e </span><br>
-		<span class="indent">	return result</span><br><br>
-		
-		print sum_list( [4,5,6] ) 
-		</div><br><br>
+    </p>
+    <div class="code-block">
+    def sum_list(p): <br>
+    <span class="indent"> result = 0 </span><br>
+    <span class="indent"> for e in p: </span><br>
+    <span class="indent_indent">    result = result + e </span><br>
+    <span class="indent"> return result</span><br><br>
+    
+    print sum_list( [4,5,6] ) 
+    </div><br><br>
 Returns 15
-		<p>
+    <p>
 Example: Define a procedure, measure_udacity, that takes as its input a list of strings, and returns a number that is a count of the number of elements in the input list that start with the uppercase letter 'U'.
-		</p>
-		<div class="code-block">
-		def measure_udacity(p):<br>
-		<span class="indent">	count = 0 </span><br>
-		<span class="indent">	for e in p: </span><br>
-		<span class="indent_indent">		If e[0]=="U" </span><br>
-		<span class="indent_3">				count = count + 1 </span><br>
-		<span class="indent">		return count </span><br>
+    </p>
+    <div class="code-block">
+    def measure_udacity(p):<br>
+    <span class="indent"> count = 0 </span><br>
+    <span class="indent"> for e in p: </span><br>
+    <span class="indent_indent">    If e[0]=="U" </span><br>
+    <span class="indent_3">       count = count + 1 </span><br>
+    <span class="indent">   return count </span><br>
         </div>
         <p>
 Example: Define a procedure, find_element, that takes as its inputs a list and a value of any type, and returns the index of the first element in the input list that matches the value.   If there is no matching element, return -1. <br>
 There are two solutions reviewed:
-		</p>
-		<div class="code-block">
-		def find_element(list,target):<br>
-		<span class="indent">		count = 0 </span><br>
-		<span class="indent">		while count<em>is less than</em>len(list): <!--actual code is 'while count<len(list):' --> </span><br>
-		<span class="indent_indent">	If list[count]==target: </span><br>
-		<span class="indent_3">				return count </span><br>
-		<span class="indent_indent">	count = count + 1 </span><br>
-		<span class="indent">	return -1 </span><br>
+    </p>
+    <div class="code-block">
+    def find_element(list,target):<br>
+    <span class="indent">   count = 0 </span><br>
+    <span class="indent">   while count<em>is less than</em>len(list): <!--actual code is 'while count<len(list):' --> </span><br>
+    <span class="indent_indent">  If list[count]==target: </span><br>
+    <span class="indent_3">       return count </span><br>
+    <span class="indent_indent">  count = count + 1 </span><br>
+    <span class="indent"> return -1 </span><br>
         </div>
-		<p>		
-		OR
+    <p>   
+    OR
         </p>
-		<div class="code-block">
+    <div class="code-block">
         def find_element(list,target):<br>
-		<span class="indent">		count = 0 </span><br>
-		<span class="indent">		for e in list: </span><br>
-		<span class="indent_indent">	If e == target: </span><br>
-		<span class="indent_3">				return count </span><br>
-		<span class="indent_indent">	count = count + 1 </span><br>
-		<span class="indent">		return -1 </span><br>
+    <span class="indent">   count = 0 </span><br>
+    <span class="indent">   for e in list: </span><br>
+    <span class="indent_indent">  If e == target: </span><br>
+    <span class="indent_3">       return count </span><br>
+    <span class="indent_indent">  count = count + 1 </span><br>
+    <span class="indent">   return -1 </span><br>
         </div>
         <h3>INDEX and IN Procedures:</h3>
         <p>
@@ -576,73 +575,73 @@ Syntax <em>list</em>.index(<em>value</em>)<br><br>
 
 Another operation required for the alternate is the IN procedure. <br>
 Syntax is <em>value</em> in <em>list</em><br>
-		</p>
-		<div class="code-block">
-		Print <em>value</em> in <em>list</em>
+    </p>
+    <div class="code-block">
+    Print <em>value</em> in <em>list</em>
         </div> <br>
 Returns False if the value is not in the list, else returns true because the value is in the list.  Can use the opposite and write <br>
-		<div class="code-block">
-		is <em>value</em> not in <em>list</em>
+    <div class="code-block">
+    is <em>value</em> not in <em>list</em>
         </div> 
         <p>
         for opposite meaning.
         </p>
-		<div class="code-block">
-		def find_element(list,target): <br>
-		<span class="indent">	If target in list: </span><br>
-		<span class="indent_indent">	Return list.index(target) </span><br>
-		<span class="indent">	else: </span><br>
-		<span class="indent_indent">	Return -1 </span>
+    <div class="code-block">
+    def find_element(list,target): <br>
+    <span class="indent"> If target in list: </span><br>
+    <span class="indent_indent">  Return list.index(target) </span><br>
+    <span class="indent"> else: </span><br>
+    <span class="indent_indent">  Return -1 </span>
         </div><br><br>
-		<div class="code-block">
-		Print find_element([1,2,3],3)
+    <div class="code-block">
+    Print find_element([1,2,3],3)
         </div><br>
         <p>
 Returns 2  because 3 is in character space 2 in the list starting at 0.
         </p>
         <div class="code-block">
-		Print find_element(['alpha','beta'],'gamma')
+    Print find_element(['alpha','beta'],'gamma')
         </div><br>
         <p>
 Returns -1 because gamma does not appear in the list. <br>
-		<h3>More  Lists examples:</h3>
+    <h3>More  Lists examples:</h3>
 EXAMPLE 1: Lists can contain strings<br>
-		<div class="code-block">
-		string_list = ['HTML', 'CSS', 'Python']<br>
-		print string_list<br>
+    <div class="code-block">
+    string_list = ['HTML', 'CSS', 'Python']<br>
+    print string_list<br>
         </div><br>
 Returns:  ['HTML', 'CSS', 'Python']<br><br>
 EXAMPLE 2: Lists can contain numbers:<br>
-		<div class="code-block">
-		number_list = [3.14159, 2.71828, 1.61803]<br>
-		print number_list<br>
-		</div><br>
+    <div class="code-block">
+    number_list = [3.14159, 2.71828, 1.61803]<br>
+    print number_list<br>
+    </div><br>
 Returns:  [3.14159, 2.71828, 1.61803]<br><br>
 EXAMPLE 3: Lists can be 'accessed' and 'sliced'<br>
-		<div class="code-block">
-		pi = number_list[0]<br>
-		not_pi = number_list[1:]<br>
-		print pi<br>
-		print not_pi
+    <div class="code-block">
+    pi = number_list[0]<br>
+    not_pi = number_list[1:]<br>
+    print pi<br>
+    print not_pi
         </div><br>
 Returns:  3.14159<br>
 [2.71828, 1.61803]<br><br>
 EXAMPLE 4: Lists can contain strings AND numbers<br>
-		<div class="code-block"> mixed_list = ['Hello!', 42, "Goodbye!"]<br>
-		print mixed_list
+    <div class="code-block"> mixed_list = ['Hello!', 42, "Goodbye!"]<br>
+    print mixed_list
         </div><br>
 Returns: ['Hello!', 42, 'Goodbye!']<br><br>        
 Example 5: Lists can even contain other lists<br>
-		<div class="code-block">
-		list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
-		print list_with_lists<br>
+    <div class="code-block">
+    list_with_lists = [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br>
+    print list_with_lists<br>
         </div><br>
 Returns: [3, 'colors:', ['red', 'green', 'blue'], 'your favorite?']<br><br>
 EXAMPLE with  a 'for' loop:<br>
-		<div class="code-block">
-		example_list_1 = ['a', 'b', 'c', 'd'] <br>
-		for thing in example_list_1:<br>
-		<span class="indent">	print thing</span>
+    <div class="code-block">
+    example_list_1 = ['a', 'b', 'c', 'd'] <br>
+    for thing in example_list_1:<br>
+    <span class="indent"> print thing</span>
         </div><br>
 Returns:<br>
 a<br>
@@ -650,14 +649,14 @@ b<br>
 c<br>
 d<br><br>
 EXAMPLE with loops on nested lists (remember to break at commas in long lists)<br>
-		<div class="code-block">
-		example_list_2 = [['China', 'Beijing'],<br>
-		<span class="indent">	['USA'  , 'Washington D.C.'],</span><br>
-		<span class="indent">	['India', 'Delhi']]</span><br>
-		for country_with_capital in example_list_2:<br>
-		<span class="indent">	country = country_with_capital[0]</span><br>
-		<span class="indent">	capital = country_with_capital[1]</span><br>
-		<span class="indent">	print capital + ' is the capital of ' + country</span>
+    <div class="code-block">
+    example_list_2 = [['China', 'Beijing'],<br>
+    <span class="indent"> ['USA'  , 'Washington D.C.'],</span><br>
+    <span class="indent"> ['India', 'Delhi']]</span><br>
+    for country_with_capital in example_list_2:<br>
+    <span class="indent"> country = country_with_capital[0]</span><br>
+    <span class="indent"> capital = country_with_capital[1]</span><br>
+    <span class="indent"> print capital + ' is the capital of ' + country</span>
         </div><br>
 Returns:<br>
 Beijing is the capital of China<br>
@@ -665,12 +664,12 @@ Washington D.C. is the capital of USA<br>
 Delhi is the capital of India<br><br>
          
          EXAMPLE: Write a procedure list_test which takes three lists as inputs. You should mutate the first input list to include 'a' as the last entry, mutate the second to include the entries 'a', 'b', 'c' and finally the last list should not be mutated but a copy should be returned with the additional entry 'w'.<br>
-		<div class="code-block">
-		def list_test(first_input, second_input, third_input): <br>
-		<span class="indent">	    first_input = first_input.append('a')</span><br>
-		<span class="indent">	    second_input += ['a','b','c']</span><br>
-		<span class="indent">	    third_input = third_input + ['w']</span><br>
-		<span class="indent">	    return third_input</span>
+    <div class="code-block">
+    def list_test(first_input, second_input, third_input): <br>
+    <span class="indent">     first_input = first_input.append('a')</span><br>
+    <span class="indent">     second_input += ['a','b','c']</span><br>
+    <span class="indent">     third_input = third_input + ['w']</span><br>
+    <span class="indent">     return third_input</span>
         </div><br><br>
 first_input = [1,2,3]<br>
 second_input = [4,5,6]<br>
@@ -694,21 +693,21 @@ returns [7,8,9]<br>
          <table style="width:100%">
   <tr>
     <th><b>Term</b></th>
-    <th><b>Description</b></th>		
+    <th><b>Description</b></th>   
   </tr>
   <tr>
     <td>Object</td>
-    <td>An object is a self-contained component that contains properties and methods needed to make a certain type of data useful. An object's properties are what it knows and its methods are what it can do. </td>		
+    <td>An object is a self-contained component that contains properties and methods needed to make a certain type of data useful. An object's properties are what it knows and its methods are what it can do. </td>   
   </tr>  
     <tr>
     <td>Class</td>
     <td>Neatly packaged 'box' that puts things together, like a blueprint of a building. The 'blueprint' contains enough generic information about the building that the same blueprint can be used to create many similar buildings.  Similarly, the class contains pieces of info about the class, so you can use it to create multiple objects from the class.  The objects created are instances.
-</td>		
+</td>   
   </tr>
   <tr>
     <td>Instantiation</td>
     <td>An instance is a specific object built from a specific class. It is assigned to a reference variable that is used to access all of the instance's properties and methods. When you make a new instance the process is called instantiation.  <br> Adobe has a great analogy: "Think about classes, instances, and instantiation like baking a cake. A class is like a recipe for chocolate cake. The recipe itself is not a cake. You can't eat the recipe (or at least wouldn't want to). If you correctly do what the recipe tells you to do (instantiate it) then you have an edible cake. That edible cake is an instance of the chocolate cake class."
-</td>		
+</td>   
   </tr>
   <tr>
     <td>init</td>
@@ -719,7 +718,7 @@ returns [7,8,9]<br>
     <span class="indent_3">self.name = name </span><br>
     <span class="indent_3">self.id = id </span> <!-- from: http://www.bogotobogo.com/python/python_classes_instances.php#sthash.mad94C5i.dpuf-->
     </div>
-</td>		
+</td>   
   </tr>
   <tr>
     <td><a href="https://docs.python.org/3/library/">Python Standard Library</a> </td>
@@ -730,28 +729,28 @@ returns [7,8,9]<br>
     <td>The from...import Statement</td>
     <td>Python's from statement lets you import specific attributes from a module into the current namespace. The from...import has the following syntax:<br>
     <span class="indent">from modname import name1[, name2[, ... nameN]]</span><br>
-	For example, to import the function <em>fibonacci</em> from the module <em>fib</em>, use the following statement:<br>
+  For example, to import the function <em>fibonacci</em> from the module <em>fib</em>, use the following statement:<br>
     <span class="indent">from fib import fibonacci</span><br>
-	This statement does not import the entire module fib into the current namespace; it just introduces the item fibonacci from the module fib into the global symbol table of the importing module.<br> 			For our Twilio example: When I downloaded Twilio, it contained a folder (twilio) which contained another folder (rest) which contained a class (TwilioRestClient).<br>
+  This statement does not import the entire module fib into the current namespace; it just introduces the item fibonacci from the module fib into the global symbol table of the importing module.<br>      For our Twilio example: When I downloaded Twilio, it contained a folder (twilio) which contained another folder (rest) which contained a class (TwilioRestClient).<br>
 When we say <em>rest.TwilioRestClient()</em> we are really calling the __init__ function defined in the class, and this creates an instance. We call this instance "Client" in the example how to use this class below.<br>
-	<div class="code-block">
-	From twilio.rest import TwilioRestClient
+  <div class="code-block">
+  From twilio.rest import TwilioRestClient
     </div><br>
-	This means from the twilio module, go to the rest folder and we are going to use the class TwilioRestClient from that folder and define the client attribute as such:<br>
-	<div class="code-block">Client = TwilioRestClient(account_sid, auth_token)
+  This means from the twilio module, go to the rest folder and we are going to use the class TwilioRestClient from that folder and define the client attribute as such:<br>
+  <div class="code-block">Client = TwilioRestClient(account_sid, auth_token)
     </div><br>
-	OR you can say <br>
+  OR you can say <br>
     <div class="code-block">
     From twilio import rest
     </div><br>
-	To tell the program to import the entire rest folder from the twilio module and define the client attribute as such: <br>
+  To tell the program to import the entire rest folder from the twilio module and define the client attribute as such: <br>
     <div class="code-block">
-	Client = rest.TwilioRestClient(account_sid, auth_token)
+  Client = rest.TwilioRestClient(account_sid, auth_token)
     </div></td>
   </tr>
     <tr>
-	<td>Method</td>
-	<td>It's a function which is a member of a class.  A function is a named piece of code that performs an operation, and a method is a function with an extra parameter which is the object that it's to run on.</td>
+  <td>Method</td>
+  <td>It's a function which is a member of a class.  A function is a named piece of code that performs an operation, and a method is a function with an extra parameter which is the object that it's to run on.</td>
   </tr>
     <tr>
     <td>Instance Variables</td>
@@ -761,7 +760,7 @@ When we say <em>rest.TwilioRestClient()</em> we are really calling the __init__ 
     <td>Instance Method</td>
     <td>A function defined within a class is called an Instance Method</td>
   </tr>
-  	<tr>
+    <tr>
     <td>Class Variable - </td>
     <td>variables apply to all instances of a class, like the same movie ratings apply to all movie instances</td>
     </tr>
@@ -833,43 +832,42 @@ Here's an example: If I'm your laundry object, you can give me your dirty clothe
     </div>
     
     <!-- Main Page Content -->
-    <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- <div class="container">
+    <!--  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
         </div>
-      </div>
-    </div>
+      </div> 
+    </div> -->
     <div class="container">
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_Nua3Cjdik0" data-toggle="modal" data-target="#trailer">
     <img src="images/brenda.jpg" alt="Image Source Cannot Load" width="150" height="180">
     <h4>Click my face for the video</h4>
-	</div>
-    	</div>
+  </div>
+      </div>
              </div>
          <div class="lesson">
                      <h2>Helpful Links</h2>
                 <div class="concept">
-                    <p>
-                    Enter your helpful links here!
-                    </p>
-      <form  method="post">
+            {% for link in links %}
+              <blockquote><a href="{{ link.linkurl }}">{{ link.name }}</a></blockquote>
+            {% endfor %}
+        <p>Enter your helpful links here!</p>
+    <form action="/sign?guestbook_name={{ guestbook_name }}" method="post">
       <label> Site Name:
-      <div><textarea name="name" rows="1" cols="150"></textarea></div>
+      <div><textarea name="name" rows="2" cols="200"></textarea></div>
       </label>
       <label> Site URL:
-      <div><textarea name="url" rows="2" cols="200"></textarea></div>   
-      </label>   
+      <div><textarea name="linkurl" rows="1" cols="150"></textarea></div>
+      </label>
       <div><input type="submit" value="Enter Link"></div>
     </form>
-        {% for name in names %}
-      {% if sites.name %}
-        <b>{{ sites.<a href="sites.url">sites.name</a> }}</b>
-    {% endfor %}
+<!--     <form>Guestbook name:
+      <input value="{{ guestbook_name }}" name="guestbook_name">
+      <input type="submit" value="switch">
+    </form>
 
-    
-    <a href="{{ url|safe }}">{{ url_linktext }}</a>                             
-                </div>
+    <a href="{{ url|safe }}">{{ url_linktext }}</a> -->
+</div>
          </div>
       </body>
 </html>
-{% endautoescape %}
